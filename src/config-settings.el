@@ -76,7 +76,7 @@
 ;;;; watch file change and update buffer
 
 (global-auto-revert-mode t)
-(setq auto-revert-interval 0.3)
+(setq auto-revert-verbose nil)
 
 ;;;; to edit rectangles
 
