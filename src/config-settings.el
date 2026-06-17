@@ -77,6 +77,7 @@
 
 (global-auto-revert-mode t)
 (setq auto-revert-verbose nil)
+(setq auto-revert-interval 0.3)
 
 ;;;; to edit rectangles
 
