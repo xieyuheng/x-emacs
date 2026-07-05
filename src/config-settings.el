@@ -11,6 +11,11 @@
 (tool-bar-mode -1)
 (menu-bar-mode -1)
 (scroll-bar-mode -1)
+
+(global-unset-key (kbd "C-<mouse-4>"))
+(global-unset-key (kbd "C-<mouse-5>"))
+(global-unset-key (kbd "C-<wheel-up>"))
+(global-unset-key (kbd "C-<wheel-down>"))
 (fset 'yes-or-no-p 'y-or-n-p)
 
 ;;;; line height
