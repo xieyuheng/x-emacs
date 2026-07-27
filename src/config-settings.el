@@ -68,7 +68,7 @@
         (background-color . "black")
         (foreground-color . "white")))
 
-(setq frame-background-mode 'dark)
+;; (setq frame-background-mode 'dark)
 
 ;;;; cursor
 
