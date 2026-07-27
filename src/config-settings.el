@@ -60,15 +60,13 @@
 
 (setq x-gtk-use-native-input t)
 
-;;;; fix frame-alist
+;;;; default-frame-alist
 
 (setq default-frame-alist
       '((fullscreen . maximized)
         (vertical-scroll-bars . nil)
         (background-color . "black")
         (foreground-color . "white")))
-
-;; (setq frame-background-mode 'dark)
 
 ;;;; cursor
 
