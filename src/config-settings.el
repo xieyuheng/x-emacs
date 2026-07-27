@@ -62,12 +62,13 @@
 
 ;;;; fix frame-alist
 
-(defvar my-frame-alist
-  '((fullscreen . maximized)
-    (vertical-scroll-bars . nil)))
+(setq default-frame-alist
+      '((fullscreen . maximized)
+        (vertical-scroll-bars . nil)
+        (background-color . "black")
+        (foreground-color . "white")))
 
-(setq default-frame-alist my-frame-alist)
-(setq initial-frame-alist my-frame-alist)
+(setq frame-background-mode 'dark)
 
 ;;;; cursor
 
