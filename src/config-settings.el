@@ -63,8 +63,7 @@
 ;;;; default-frame-alist
 
 (setq default-frame-alist
-      '((fullscreen . maximized)
-        (vertical-scroll-bars . nil)
+      '(;; (vertical-scroll-bars . nil)
         (background-color . "black")
         (foreground-color . "white")))
 
