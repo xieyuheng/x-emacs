@@ -28,7 +28,7 @@
 
 ;;;; 黑
 
-(set-fontset-font t 'han (font-spec :name "unifont" :size 48))
+(set-fontset-font t 'han (font-spec :name "unifont"))
 ;; (set-fontset-font t 'han (font-spec :name "H-雲林呉竹体" :size 26))
 ;; (set-fontset-font t 'han (font-spec :name "Sarasa Mono SC" :size 50))
 ;; (set-fontset-font t 'han (font-spec :name "H-明蘭" :size 5044))
