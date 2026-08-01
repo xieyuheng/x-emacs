@@ -63,12 +63,12 @@
 ;;;; default-frame-alist
 
 (setq initial-frame-alist
-      '((vertical-scroll-bars . t)
+      '((vertical-scroll-bars . nil)
         (background-color . "black")
         (foreground-color . "white")))
 
 (setq default-frame-alist
-      '((vertical-scroll-bars . t)
+      '((vertical-scroll-bars . nil)
         (background-color . "black")
         (foreground-color . "white")))
 
