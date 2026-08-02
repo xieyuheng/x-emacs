@@ -8,6 +8,7 @@
 (require 'x-kill-current-buffer)
 (require 'x-paste-from-clipboard)
 (require 'x-save-buffer)
+(require 'x-session)
 (require 'x-toggle-comment)
 (require 'x-delete-frame-or-exit)
 (require 'x-sidebar)
