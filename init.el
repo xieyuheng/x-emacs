@@ -12,6 +12,7 @@
 (require 'x-delete-frame-or-exit)
 (require 'x-sidebar)
 (require 'x-modeline)
+(require 'x-window-current-dir)
 
 ;;;; packages
 
