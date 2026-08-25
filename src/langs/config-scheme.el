@@ -1,3 +1,4 @@
+;;; -*- lexical-binding: t; -*-
 (require 'cmuscheme) ;; for `switch-to-scheme`
 
 (setq scheme-program-name "scheme")

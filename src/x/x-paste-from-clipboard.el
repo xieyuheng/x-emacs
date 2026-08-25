@@ -1,3 +1,4 @@
+;;; -*- lexical-binding: t; -*-
 (defun x-paste-from-clipboard ()
   (interactive)
   (cond

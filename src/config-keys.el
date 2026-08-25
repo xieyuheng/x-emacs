@@ -1,3 +1,4 @@
+;;; -*- lexical-binding: t; -*-
 ;;;; prefix-command
 
 (global-set-key (kbd "C-s") (make-sparse-keymap))

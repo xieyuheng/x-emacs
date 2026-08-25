@@ -1,3 +1,4 @@
+;;; -*- lexical-binding: t; -*-
 (defun x-kill-current-buffer ()
   (interactive)
   (kill-buffer (current-buffer)))

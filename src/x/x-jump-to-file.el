@@ -1,3 +1,4 @@
+;;; -*- lexical-binding: t; -*-
 (defun x-string-at-point ()
   (if (use-region-p)
       (buffer-substring (region-beginning) (region-end))

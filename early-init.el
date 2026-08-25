@@ -1,3 +1,4 @@
+;;; -*- lexical-binding: t; -*-
 (setq package-enable-at-startup nil)
 
 (setq package-user-dir (locate-user-emacs-file "var/elpa/"))

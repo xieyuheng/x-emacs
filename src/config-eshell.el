@@ -1,3 +1,4 @@
+;;; -*- lexical-binding: t; -*-
 (defun open-new-eshell-in-current-dir ()
   (interactive)
   (eshell t)

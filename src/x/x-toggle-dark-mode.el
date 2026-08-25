@@ -1,3 +1,4 @@
+;;; -*- lexical-binding: t; -*-
 ;; frame-background-mode 的作用：
 ;;
 ;; - 很多内置 face 的 defface 定义里有针对暗/亮背景的两套配色：

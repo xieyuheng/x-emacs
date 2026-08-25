@@ -1,3 +1,4 @@
+;;; -*- lexical-binding: t; -*-
 (defun x-save-buffer ()
   (interactive)
   (let ((inhibit-message t))

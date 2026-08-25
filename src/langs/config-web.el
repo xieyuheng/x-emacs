@@ -1,3 +1,4 @@
+;;; -*- lexical-binding: t; -*-
 (add-to-list 'load-path "~/.emacs.d/deps/web-mode/")
 (require 'web-mode)
 

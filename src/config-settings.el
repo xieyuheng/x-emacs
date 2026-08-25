@@ -1,3 +1,4 @@
+;;; -*- lexical-binding: t; -*-
 ;;;; title
 
 (setq frame-title-format

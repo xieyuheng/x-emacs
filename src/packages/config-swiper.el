@@ -1,3 +1,4 @@
+;;; -*- lexical-binding: t; -*-
 ;;;; ivy
 
 (add-to-list 'load-path "~/.emacs.d/deps/swiper/")

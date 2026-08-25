@@ -1,3 +1,4 @@
+;;; -*- lexical-binding: t; -*-
 (defun x-delete-frame-or-exit ()
   (interactive)
   (if (> (length (frame-list)) 1)

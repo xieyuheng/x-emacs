@@ -1,3 +1,4 @@
+;;; -*- lexical-binding: t; -*-
 ;;;; x
 
 (add-to-list 'load-path "~/.emacs.d/src/x")

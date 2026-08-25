@@ -1,3 +1,4 @@
+;;; -*- lexical-binding: t; -*-
 (defmacro make-syntaxes (name &rest lis)
   (list 'progn ;; need to control eva order
         `(setq ,name

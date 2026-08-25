@@ -1,3 +1,4 @@
+;;; -*- lexical-binding: t; -*-
 (setq initial-major-mode 'markdown-mode)
 
 ;; (if (<= (length command-line-args) 1)

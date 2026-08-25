@@ -1,3 +1,4 @@
+;;; -*- lexical-binding: t; -*-
 ;;;; tests
 
 ;; 中英等宽测试|

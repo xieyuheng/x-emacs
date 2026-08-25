@@ -1,3 +1,4 @@
+;;; -*- lexical-binding: t; -*-
 (add-to-list 'load-path "~/.emacs.d/deps/typescript.el/")
 (require 'typescript-mode)
 

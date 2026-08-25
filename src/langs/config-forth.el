@@ -1,3 +1,4 @@
+;;; -*- lexical-binding: t; -*-
 ;;;; forth-mode
 
 (add-to-list 'load-path "~/.emacs.d/deps/forth-mode/")

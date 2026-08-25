@@ -1,3 +1,4 @@
+;;; -*- lexical-binding: t; -*-
 (setq c-basic-offset 2)
 (setq c-default-style "k&r")
 

@@ -1,3 +1,4 @@
+;;; -*- lexical-binding: t; -*-
 (defun x-toggle-comment ()
   (interactive)
   (if (use-region-p)

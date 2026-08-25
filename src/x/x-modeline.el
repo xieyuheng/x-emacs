@@ -1,3 +1,4 @@
+;;; -*- lexical-binding: t; -*-
 (defgroup x-modeline nil
   "X modeline"
   :group 'mode-line)

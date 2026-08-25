@@ -1,3 +1,4 @@
+;;; -*- lexical-binding: t; -*-
 (add-to-list 'load-path "~/.emacs.d/deps/lua-mode/")
 
 (autoload 'lua-mode "lua-mode" "Lua editing mode." t)
