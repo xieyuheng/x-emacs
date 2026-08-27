@@ -7,8 +7,6 @@
 (defvar x-sidebar-ignore-patterns
   '(;; c
     "\\.o\\'" "\\.test\\'" "\\.exe\\'"
-    ;; meta-lisp
-    "\\.xexe\\'"
     ;; python
     "\\.pyc\\'"
     ;; elisp
@@ -175,18 +173,24 @@ Each pattern is matched against just the file name (not full path).")
                      (directory-file-name (expand-file-name default-directory)))
                     ((buffer-file-name)
                      (expand-file-name (buffer-file-name)))
-                    (t nil))))
+                    (t nil)))
+        (old-dir (let ((b (x-sidebar--buffer)))
+                   (and b (buffer-live-p b)
+                        (with-current-buffer b
+                          (expand-file-name default-directory))))))
     (if win
         (progn
           (select-window win)
           (x-sidebar--enter-dir dir))
-      (let ((buf (x-sidebar--make-buffer dir)))
+      (let ((buf (x-sidebar--get-or-create-buffer dir)))
         (x-sidebar--set-buffer buf)
         (delete-other-windows)
         (let ((new-win (split-window (selected-window) (- x-sidebar--width) 'left)))
           (set-window-buffer new-win buf))
         (select-window (x-sidebar--find-window))
-        (when orig
+        (when (and orig
+                   (not (equal old-dir
+                               (file-name-as-directory (expand-file-name dir)))))
           (x-sidebar--goto-entry orig))
         (x-sidebar--preview)))))
 
@@ -259,12 +263,20 @@ Each pattern is matched against just the file name (not full path).")
           (set-window-buffer new-win buf)
           new-win))))
 
+(defun x-sidebar--hide ()
+  "Hide the sidebar window, keeping its buffer alive."
+  (interactive)
+  (let ((win (x-sidebar--find-window)))
+    (when (and win (not (one-window-p)))
+      (delete-window win))))
+
 (defun x-sidebar--switch-to-main ()
-  "Switch focus to the main window."
+  "Switch focus to the main window and hide the sidebar."
   (interactive)
   (let ((main-win (x-sidebar--main-window)))
     (when main-win
-      (select-window main-win))))
+      (select-window main-win)
+      (x-sidebar--hide))))
 
 (provide 'x-sidebar)
 ;;; x-sidebar.el ends here
