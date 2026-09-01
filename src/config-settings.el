@@ -21,7 +21,7 @@
 
 ;;;; line height
 
-(setq-default line-spacing 0.15)
+(setq-default line-spacing 0.25)
 
 ;;;; misc
 
