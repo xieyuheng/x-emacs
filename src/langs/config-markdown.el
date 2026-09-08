@@ -8,6 +8,11 @@
 
 (setq markdown-fontify-code-blocks-natively t)
 
+(setq markdown-code-lang-modes
+      '(("xvm-lisp" . meta-lisp-mode)
+        ("basic-lisp" . meta-lisp-mode)
+        ("ts" . typescript-mode)))
+
 (add-hook
  'markdown-mode-hook
  (lambda ()

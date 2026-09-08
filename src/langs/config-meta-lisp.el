@@ -7,3 +7,4 @@
 (setq auto-mode-alist (cons `("\\.basic$" . meta-lisp-mode) auto-mode-alist))
 (setq auto-mode-alist (cons `("\\.basic2$" . meta-lisp-mode) auto-mode-alist))
 (setq auto-mode-alist (cons `("\\.x86.asm$" . meta-lisp-mode) auto-mode-alist))
+(setq auto-mode-alist (cons `("\\.xvm.asm$" . meta-lisp-mode) auto-mode-alist))
