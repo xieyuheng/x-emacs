@@ -92,6 +92,7 @@
 ;;;; to edit rectangles
 
 (cua-selection-mode 1)
+(setq delete-selection-save-to-register nil)
 
 ;;;; buffer name
 
