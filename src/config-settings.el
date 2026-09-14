@@ -40,8 +40,6 @@
 (show-paren-mode t)
 (setq show-paren-style 'parentheses)
 
-(remove-hook 'yank-hook #'yank-highlight-after-pop)
-
 ;;;; enable disabled features
 
 (put 'set-goal-column 'disabled nil)
