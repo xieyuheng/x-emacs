@@ -2,7 +2,11 @@
 
 (require 'cl-lib)
 
-(defvar x-sidebar--width 30 "Sidebar width in columns.")
+(defvar x-sidebar-width-ratio 0.25 "Sidebar width as a ratio of frame width.")
+
+(defun x-sidebar--compute-width ()
+  (max window-min-width
+       (round (* (frame-width) x-sidebar-width-ratio))))
 
 (defvar x-sidebar-ignore-patterns
   '(;; c
@@ -185,7 +189,7 @@ Each pattern is matched against just the file name (not full path).")
       (let ((buf (x-sidebar--get-or-create-buffer dir)))
         (x-sidebar--set-buffer buf)
         (delete-other-windows)
-        (let ((new-win (split-window (selected-window) (- x-sidebar--width) 'left)))
+        (let ((new-win (split-window (selected-window) (- (x-sidebar--compute-width)) 'left)))
           (set-window-buffer new-win buf))
         (select-window (x-sidebar--find-window))
         (when (and orig
@@ -259,7 +263,7 @@ Each pattern is matched against just the file name (not full path).")
                                     (dired-noselect file)
                                   (find-file-noselect file)))
                           (t (other-buffer (current-buffer)))))
-               (new-win (split-window cur x-sidebar--width 'right)))
+               (new-win (split-window cur (x-sidebar--compute-width) 'right)))
           (set-window-buffer new-win buf)
           new-win))))
 
