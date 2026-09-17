@@ -16,5 +16,6 @@ lib
 # deps and state
 deps/
 var/
+tree-sitter/
 eln-cache/
 recentf

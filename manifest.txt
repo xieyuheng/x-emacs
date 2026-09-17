@@ -17,3 +17,4 @@ git@github.com:fxbois/web-mode.git
 git@github.com:yoshiki/yaml-mode.git
 git@github.com:abo-abo/swiper.git
 git@github.com:xieyuheng/meta-lisp-mode.git
+git@github.com:taquangtrung/emacs-kdl-mode.git

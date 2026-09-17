@@ -46,6 +46,7 @@
 (load "config-web")
 (load "config-markdown")
 (load "config-yaml")
+(load "config-kdl")
 (load "config-c")
 (load "config-python")
 (load "config-scala")
