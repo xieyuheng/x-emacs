@@ -25,6 +25,7 @@
 
 ;;;; misc
 
+(setq-default fill-column 60)
 (setq tab-width 8)
 (setq visible-bell t)
 (setq column-number-mode t)
