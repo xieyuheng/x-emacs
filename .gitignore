@@ -19,3 +19,5 @@ var/
 tree-sitter/
 eln-cache/
 recentf
+
+server/

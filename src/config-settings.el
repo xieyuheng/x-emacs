@@ -114,3 +114,8 @@
   (add-hook 'dired-mode-hook 'dired-omit-mode)
   (define-key dired-mode-map (kbd "C-o")
               (lambda () (interactive) (other-window +1))))
+;;;; windows fullscreen
+
+(when (eq system-type 'windows-nt)
+  (add-to-list 'initial-frame-alist '(fullscreen . maximized))
+  (add-to-list 'default-frame-alist '(fullscreen . maximized)))

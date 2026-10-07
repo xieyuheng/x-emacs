@@ -8,3 +8,8 @@
 (setq backup-directory-alist `(("." . ,(locate-user-emacs-file "var/backups/"))))
 (setq eshell-directory-name (locate-user-emacs-file "var/eshell/"))
 (setq ivy-history-file (locate-user-emacs-file "var/ivy-history"))
+;;;; windows
+
+(when (eq system-type 'windows-nt)
+  (add-to-list 'initial-frame-alist '(fullscreen . maximized))
+  (add-to-list 'default-frame-alist '(fullscreen . maximized)))
