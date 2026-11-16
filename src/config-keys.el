@@ -121,7 +121,7 @@
 (define-key swiper-map (kbd "C-t") 'swiper-C-s)
 
 (global-set-key (kbd "C-r") 'counsel-git)
-(global-set-key (kbd "C-x f") 'counsel-git-grep)
+(global-set-key (kbd "C-x C-g") 'counsel-git-grep)
 
 ;;;;; jump-to-file
 
